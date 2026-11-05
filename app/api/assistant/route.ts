@@ -47,7 +47,8 @@ export async function POST(req: Request) {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${apiKey}` },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model: 'openai/gpt-oss-120b',
+        reasoning_effort: 'low',
         messages: [{ role: 'system', content: SYSTEM_PROMPT }, ...messages],
         temperature: 0.6,
         max_tokens: 300,
