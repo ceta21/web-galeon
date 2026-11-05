@@ -8,7 +8,7 @@ Necesitas Node.js 20 o superior.
 
 ```bash
 npm install
-cp .env.example .env.local   # y pon tu GROQ_API_KEY
+cp .env.example .env.local   # y rellena las claves
 npm run dev                  # http://localhost:3000
 ```
 
@@ -33,13 +33,28 @@ Consigue una clave gratis en https://console.groq.com/keys y ponla como `GROQ_AP
 en `.env.local` (o en las variables de entorno de tu hosting).
 Sin clave, el chat muestra un aviso amable y remite al formulario.
 
+## Formulario de contacto
+
+Los mensajes se envían por email con [Resend](https://resend.com) desde el servidor.
+Necesita dos variables:
+
+- `RESEND_API_KEY`: crea una clave en https://resend.com/api-keys (el plan gratis basta).
+- `CONTACT_TO_EMAIL`: el correo donde quieres recibir los mensajes (puedes poner varios
+  separados por comas). Al responder al email, contestas directamente al visitante.
+
+Mientras no verifiques un dominio en Resend, el remitente es `onboarding@resend.dev` y
+Resend **solo deja enviar al email con el que creaste la cuenta**, así que `CONTACT_TO_EMAIL`
+tiene que ser ese. Cuando verifiques tu dominio, añade `RESEND_FROM`
+(p. ej. `GALEON Web <web@tudominio.com>`) y podrás recibir en cualquier dirección.
+
+Si faltan las variables o Resend falla, el formulario no finge que se ha enviado: muestra
+un error con el email de contacto de `lib/content.ts`.
+
 ## Pendiente
 
-- **Envío real del formulario**: ahora valida y confirma, pero no manda email.
-  Conéctalo en `app/api/contact/route.ts` (por ejemplo con Resend o Nodemailer).
 - **Redes sociales**: añade las URLs en `site.social` de `lib/content.ts`.
 
 ## Publicar
 
 La forma más sencilla es [Vercel](https://vercel.com): importa el repositorio y añade
-`GROQ_API_KEY` en *Settings → Environment Variables*.
+`GROQ_API_KEY`, `RESEND_API_KEY` y `CONTACT_TO_EMAIL` en *Settings → Environment Variables*.
