@@ -47,7 +47,7 @@ export default function ContactSection({ standalone = false }: { standalone?: bo
           <div className="contact__info">
             <span className="eyebrow">Empecemos</span>
             <h2>
-              ¿Listo para poner la <span className="gradient-text">IA</span> a trabajar?
+              ¿Listo para poner la <span className="accent">IA</span> a trabajar?
             </h2>
             <p>
               Cuéntanos qué proceso te quita más tiempo o qué web necesitas, y te devolvemos una propuesta concreta en

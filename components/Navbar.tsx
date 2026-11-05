@@ -9,13 +9,10 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState('');
-  const [progress, setProgress] = useState(0);
 
   useEffect(() => {
     const onScroll = () => {
       setScrolled(window.scrollY > 12);
-      const max = document.documentElement.scrollHeight - window.innerHeight;
-      setProgress(max > 0 ? window.scrollY / max : 0);
     };
     onScroll();
     window.addEventListener('scroll', onScroll, { passive: true });
@@ -79,7 +76,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      <div className="navbar__progress" style={{ transform: `scaleX(${progress})` }} aria-hidden="true" />
 
       <nav id="mobile-menu" className={`navbar__mobile ${open ? 'is-open' : ''}`} aria-label="Navegación móvil" hidden={!open}>
         {nav.map((item) => (

@@ -1,6 +1,6 @@
 import { services } from '@/lib/content';
 import SectionTitle from './SectionTitle';
-import SpotlightCard from './SpotlightCard';
+import Card from './Card';
 import Reveal from './Reveal';
 import Icon from './Icon';
 
@@ -16,7 +16,7 @@ export default function Services() {
         <div className="bento">
           {services.map((s, i) => (
             <Reveal key={s.title} delay={i * 90} className={`bento__cell bento__cell--${i + 1}`}>
-              <SpotlightCard className="service-card">
+              <Card className="service-card">
                 <div className="icon-box">
                   <Icon name={s.icon} size={24} />
                 </div>
@@ -30,7 +30,7 @@ export default function Services() {
                 <span className="service-card__index" aria-hidden="true">
                   0{i + 1}
                 </span>
-              </SpotlightCard>
+              </Card>
             </Reveal>
           ))}
         </div>

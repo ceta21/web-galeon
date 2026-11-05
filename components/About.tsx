@@ -1,6 +1,6 @@
 import { about, useCases, quote } from '@/lib/content';
 import Reveal from './Reveal';
-import SpotlightCard from './SpotlightCard';
+import Card from './Card';
 import Icon from './Icon';
 
 export default function About() {
@@ -36,20 +36,19 @@ export default function About() {
           <div className="usecases__grid">
             {useCases.map((u, i) => (
               <Reveal key={u.title} delay={i * 80}>
-                <SpotlightCard className="usecase">
+                <Card className="usecase">
                   <div className="icon-box icon-box--sm">
                     <Icon name={u.icon} size={20} />
                   </div>
                   <h3>{u.title}</h3>
                   <p>{u.description}</p>
-                </SpotlightCard>
+                </Card>
               </Reveal>
             ))}
           </div>
         </div>
 
         <Reveal as="blockquote" className="quote">
-          <Icon name="spark" size={28} />
           <p>“{quote}”</p>
           <cite>Equipo GALEON</cite>
         </Reveal>

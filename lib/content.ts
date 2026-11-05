@@ -28,17 +28,8 @@ export const hero = {
   titleEnd: 'a trabajar para tu negocio.',
   subtitle:
     'Detectamos dónde pierde tiempo tu empresa y lo resolvemos con automatizaciones, asistentes de IA y webs que convierten. Sin humo: soluciones que se usan desde el primer día.',
-  rotatorPrefix: 'Hoy podemos automatizar',
-  rotatorWords: [
-    'la atención al cliente',
-    'la gestión de leads',
-    'el reporting',
-    'la generación de contenido',
-    'tus tareas repetitivas',
-  ],
   primaryCta: { label: 'Pide tu diagnóstico gratuito', href: '/#contacto' },
   secondaryCta: { label: 'Ver servicios', href: '/#servicios' },
-  chips: ['IA generativa integrada', 'Webs listas para escalar', 'Asistentes 24/7'],
 };
 
 export const trust = [
@@ -100,7 +91,6 @@ export const useCases: { icon: IconName; title: string; description: string }[] 
 
 export const quote = 'La automatización no sustituye el criterio humano: lo libera para lo importante.';
 
-export const marquee = ['Automatización', 'Inteligencia artificial', 'Asistentes', 'Desarrollo web', 'Integraciones', 'Consultoría'];
 
 // Demo animada de la sección "Cómo funciona": un lead que entra y se procesa solo.
 export const demoFlow = [

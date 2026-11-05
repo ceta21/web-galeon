@@ -130,7 +130,6 @@ export default function ChatWidget() {
 
       <button className="chat__launcher" onClick={() => setOpen((v) => !v)} aria-label={open ? 'Cerrar chat' : 'Abrir chat con Nova'} aria-expanded={open}>
         {open ? <Icon name="close" size={24} /> : <Icon name="chat" size={26} />}
-        {!open && <span className="chat__ping" aria-hidden="true" />}
       </button>
     </div>
   );

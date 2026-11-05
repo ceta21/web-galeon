@@ -1,13 +1,12 @@
 import type { Metadata, Viewport } from 'next';
-import { Inter, Space_Grotesk } from 'next/font/google';
+import { Montserrat } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
 import { site } from '@/lib/content';
 import './globals.css';
 
-const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
-const grotesk = Space_Grotesk({ subsets: ['latin'], variable: '--font-grotesk', display: 'swap' });
+const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-montserrat', display: 'swap' });
 
 export const metadata: Metadata = {
   title: {
@@ -25,12 +24,12 @@ export const metadata: Metadata = {
 };
 
 export const viewport: Viewport = {
-  themeColor: '#05070d',
+  themeColor: '#0f1b5c',
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={`${inter.variable} ${grotesk.variable}`}>
+    <html lang="es" className={montserrat.variable}>
       <body>
         <a href="#main" className="skip-link">
           Saltar al contenido
