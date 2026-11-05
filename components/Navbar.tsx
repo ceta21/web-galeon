@@ -44,7 +44,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'navbar--scrolled' : ''}`}>
       <div className="navbar__inner">
         <Link href="/" className="navbar__brand" onClick={() => setOpen(false)}>
-          <Image src="/img/galeon-mark.png" alt="" width={40} height={40} priority />
+          <Image src="/img/galeon-simbolo-blanco.svg" alt="" width={40} height={41} priority unoptimized />
           <span>GALEON</span>
         </Link>
 

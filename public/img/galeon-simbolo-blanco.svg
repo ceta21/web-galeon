@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="250 110 520 530" width="520" height="530">
+  
+
+  <!-- Púas del lomo -->
+  <g fill="#22c7e8">
+    <path d="M470 212 L424 172 Q470 150 528 198 Z"/>
+    <path d="M410 232 L358 210 Q410 186 470 206 Z"/>
+    <path d="M368 268 L316 250 Q362 214 414 226 Z"/>
+    <path d="M344 312 L292 310 Q316 262 376 256 Z"/>
+    <path d="M332 370 L279 372 Q290 318 350 302 Z"/>
+    <path d="M330 432 L284 434 Q282 382 338 362 Z"/>
+    <path d="M336 470 Q326 520 356 556 Q330 530 318 486 Z"/>
+  </g>
+
+  <!-- Cuerpo en forma de G -->
+  <path fill="#ffffff" d="M555 198 C470 200 400 225 362 270 C330 312 320 390 328 455 C338 530 390 598 470 616 C560 634 664 604 690 520 L695 420 L660 400 L640 412 C645 470 640 520 610 545 C570 565 500 565 455 535 C410 500 395 440 405 395 C418 345 470 315 560 312 Z"/>
+
+  <!-- Juntas entre placas -->
+  <g stroke="#1a35b8" stroke-width="5" stroke-linecap="round" fill="none">
+    <path d="M404 392 L330 346"/>
+    <path d="M418 470 L322 492"/>
+    <path d="M470 548 L446 612"/>
+    <path d="M552 562 L560 622"/>
+    <path d="M641 462 L694 446"/>
+    <path d="M548 204 C556 240 558 272 556 304"/>
+  </g>
+
+  <!-- Líneas de luz cian -->
+  <g stroke="#22c7e8" stroke-width="6" stroke-linecap="round" fill="none">
+    <path d="M322 390 C314 430 316 470 326 500"/>
+    <path d="M418 576 C428 590 440 598 452 604"/>
+    <path d="M652 478 C650 520 640 552 618 576"/>
+  </g>
+
+  <!-- Cola en espiral -->
+  <path d="M676 432 C630 404 552 400 512 428" fill="none" stroke="#22c7e8" stroke-width="34" stroke-linecap="butt"/>
+  <path d="M512 428 C480 454 482 500 516 518 C548 534 584 516 584 486 C584 460 560 448 542 458 C528 466 530 486 546 488" fill="none" stroke="#22c7e8" stroke-width="20" stroke-linecap="round"/>
+
+  <!-- Articulación del hombro -->
+  <circle cx="455" cy="280" r="40" fill="#0f1b4d"/>
+  <circle cx="455" cy="280" r="29" fill="#0f1b4d" stroke="#22c7e8" stroke-width="6"/>
+
+  <!-- Cabeza -->
+  <path fill="#ffffff" d="M545 200 L527 128 C560 132 610 150 650 175 C700 205 735 245 746 284 C748 292 740 298 728 298 L690 302 C670 318 640 328 605 324 C580 320 560 312 545 300 Z"/>
+  <path fill="#c9d3f2" d="M592 284 L740 292 C736 298 726 300 700 304 C670 320 630 326 600 318 Z"/>
+  <path fill="#22c7e8" d="M527 128 L552 132 L544 162 Z"/>
+
+  <!-- Ojo -->
+  <circle cx="668" cy="238" r="42" fill="#0f1b4d"/>
+  <circle cx="668" cy="238" r="23" fill="#0f1b4d" stroke="#22c7e8" stroke-width="7"/>
+  <circle cx="673" cy="233" r="4" fill="#ffffff"/>
+  <circle cx="722" cy="276" r="3.5" fill="#0f1b4d"/>
+</svg>

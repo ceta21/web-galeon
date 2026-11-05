@@ -24,7 +24,8 @@ Para producción: `npm run build` y luego `npm start`.
 | Secciones de la web | `components/` |
 | Formulario de contacto (servidor) | `app/api/contact/route.ts` |
 | Asistente "Nova" con Groq (servidor) | `app/api/assistant/route.ts` |
-| Logo | `public/img/` y `app/icon.png` (favicon) |
+| Logo (vectorial: símbolo y logo completo en color, blanco y una tinta) | `public/img/galeon-*.svg` y `app/icon.svg` (favicon) |
+| Logo original en PNG (se conserva, la web no lo usa salvo para compartir en redes) | `public/img/original/` |
 
 ## Asistente Nova
 

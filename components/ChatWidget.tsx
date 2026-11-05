@@ -70,7 +70,7 @@ export default function ChatWidget() {
       <div className="chat__panel" role="dialog" aria-label="Chat con Nova, asistente de GALEON" hidden={!open}>
         <header className="chat__head">
           <div className="chat__avatar">
-            <Image src="/img/galeon-mark.png" alt="" width={36} height={36} />
+            <Image src="/img/galeon-simbolo-blanco.svg" alt="" width={36} height={37} unoptimized />
           </div>
           <div>
             <strong>Nova</strong>

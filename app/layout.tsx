@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     description: site.description,
     type: 'website',
     locale: 'es_ES',
-    images: ['/img/galeon-logo.png'],
+    images: ['/img/original/galeon-logo.png'],
   },
 };
 

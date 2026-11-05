@@ -282,13 +282,10 @@ button {
   letter-spacing: 0.1em;
 }
 
-/* El símbolo es oscuro: va sobre un círculo blanco para que se vea en el azul */
+/* Símbolo vectorial en blanco y cian, pensado para ir sobre el azul */
 .navbar__brand img {
   width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  background: var(--white);
-  padding: 3px;
+  height: auto;
 }
 
 .navbar__links {
@@ -1398,15 +1395,13 @@ button {
 .chat__avatar {
   width: 38px;
   height: 38px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: var(--white);
+  display: grid;
+  place-items: center;
 }
 
 .chat__avatar img {
-  width: 100%;
-  height: 100%;
-  padding: 3px;
+  width: 34px;
+  height: auto;
 }
 
 .chat__head strong {

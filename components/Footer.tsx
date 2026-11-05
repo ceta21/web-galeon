@@ -13,7 +13,7 @@ export default function Footer() {
       <div className="container footer__inner">
         <div className="footer__brand">
           <Link href="/" className="navbar__brand">
-            <Image src="/img/galeon-mark.png" alt="" width={40} height={40} />
+            <Image src="/img/galeon-simbolo-blanco.svg" alt="" width={40} height={41} unoptimized />
             <span>GALEON</span>
           </Link>
           <p>{site.tagline}. Automatización con IA y desarrollo web para negocios que quieren escalar sin fricción.</p>
