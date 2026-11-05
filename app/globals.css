@@ -1600,6 +1600,14 @@ button {
   border-color: var(--border-strong);
 }
 
+.hp {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+}
+
 .form {
   display: grid;
   gap: 1.1rem;

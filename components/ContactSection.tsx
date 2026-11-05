@@ -83,6 +83,7 @@ export default function ContactSection({ standalone = false }: { standalone?: bo
               </div>
             ) : (
               <>
+                <input type="text" name="website" tabIndex={-1} autoComplete="off" className="hp" aria-hidden="true" />
                 <Field label="Nombre" name="name" error={errors.name} autoComplete="name" />
                 <Field label="Correo electrónico" name="email" type="email" error={errors.email} autoComplete="email" />
                 <Field label="Cuéntanos tu proyecto" name="message" textarea error={errors.message} />
