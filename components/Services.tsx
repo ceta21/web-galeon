@@ -10,7 +10,8 @@ export default function Services() {
       <div className="container">
         <SectionTitle
           eyebrow="Qué hacemos"
-          title="IA aplicada a tu negocio, de principio a fin"
+          title="IA aplicada a tu negocio,"
+          accent="de principio a fin"
           subtitle="Combinamos consultoría de inteligencia artificial, automatización y desarrollo web para que tu empresa funcione mejor con menos esfuerzo manual."
         />
         <div className="bento">

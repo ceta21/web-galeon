@@ -30,6 +30,63 @@ export const hero = {
     'Detectamos dónde pierde tiempo tu empresa y lo resolvemos con automatizaciones, asistentes de IA y webs que convierten. Sin humo: soluciones que se usan desde el primer día.',
   primaryCta: { label: 'Pide tu diagnóstico gratuito', href: '/#contacto' },
   secondaryCta: { label: 'Ver servicios', href: '/#servicios' },
+  badges: ['Diagnóstico gratuito', 'Respuesta en 24h', 'IA + Web en un solo equipo'],
+};
+
+// Panel interactivo de la portada. Son datos de EJEMPLO (así se indica en la web) para
+// enseñar cómo se ve el seguimiento de las automatizaciones de un cliente.
+export const heroPanel = {
+  title: 'Panel de automatizaciones',
+  note: 'Datos de ejemplo · haz clic en las pestañas',
+  days: ['L', 'M', 'X', 'J', 'V', 'S', 'D'],
+  areas: [
+    { key: 'atencion', label: 'Atención', color: '#22c7e8' },
+    { key: 'leads', label: 'Leads', color: '#1d3fcf' },
+    { key: 'reporting', label: 'Reporting', color: '#5b6cf0' },
+    { key: 'contenido', label: 'Contenido', color: '#0f1b4d' },
+  ],
+  tabs: [
+    {
+      label: 'Todos',
+      kpis: [
+        { value: '1.240', label: 'Tareas / mes' },
+        { value: '86 h', label: 'Ahorradas' },
+        { value: '3 s', label: 'Respuesta' },
+      ],
+      bars: [62, 78, 70, 92, 84, 40, 28],
+      mix: [42, 28, 18, 12],
+    },
+    {
+      label: 'Atención',
+      kpis: [
+        { value: '520', label: 'Consultas' },
+        { value: '24/7', label: 'Disponible' },
+        { value: '2 s', label: 'Respuesta' },
+      ],
+      bars: [70, 82, 76, 88, 90, 58, 46],
+      mix: [72, 12, 8, 8],
+    },
+    {
+      label: 'Leads',
+      kpis: [
+        { value: '310', label: 'Leads / mes' },
+        { value: '100%', label: 'En el CRM' },
+        { value: '5 min', label: 'Seguimiento' },
+      ],
+      bars: [55, 74, 80, 72, 86, 22, 14],
+      mix: [14, 66, 12, 8],
+    },
+    {
+      label: 'Reporting',
+      kpis: [
+        { value: '48', label: 'Informes' },
+        { value: '0', label: 'Excels a mano' },
+        { value: 'Lunes', label: 'Envío auto.' },
+      ],
+      bars: [96, 30, 34, 38, 64, 10, 8],
+      mix: [8, 14, 68, 10],
+    },
+  ],
 };
 
 export const trust = [
@@ -37,6 +94,14 @@ export const trust = [
   { value: '24h', label: 'Respuesta a tu propuesta' },
   { value: '100%', label: 'A medida' },
   { value: 'Continuo', label: 'Soporte tras lanzar' },
+];
+
+// Banda de cifras (degradado azul). Son compromisos de trabajo, no métricas inventadas.
+export const highlights = [
+  { value: '24h', label: 'Respuesta', detail: 'Te enviamos una propuesta concreta' },
+  { value: '1', label: 'Único equipo', detail: 'IA, automatización y web juntos' },
+  { value: '100%', label: 'A medida', detail: 'Nada de plantillas genéricas' },
+  { value: '24/7', label: 'Automatizaciones', detail: 'Trabajando mientras descansas' },
 ];
 
 export type IconName = 'bot' | 'code' | 'plug' | 'compass' | 'chat' | 'funnel' | 'chart' | 'pen';

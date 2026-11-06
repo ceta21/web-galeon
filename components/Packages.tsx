@@ -10,7 +10,8 @@ export default function Packages() {
       <div className="container">
         <SectionTitle
           eyebrow="Cómo empezar"
-          title="Elige cómo quieres empezar"
+          title="Elige cómo quieres"
+          accent="empezar"
           subtitle="Cada servicio funciona de forma independiente: no hace falta contratarlo todo junto."
         />
         <div className="packages">

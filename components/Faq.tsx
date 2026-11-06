@@ -11,7 +11,9 @@ export default function Faq() {
   return (
     <section className="section section--alt" id="faqs">
       <div className="container container--narrow">
-        <SectionTitle eyebrow="Dudas frecuentes" title="Preguntas frecuentes" />
+        <SectionTitle eyebrow="Dudas frecuentes" title="Preguntas"
+          accent="frecuentes"
+        />
         <Reveal className="faq">
           {faqs.map((f, i) => {
             const isOpen = open === i;

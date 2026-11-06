@@ -38,7 +38,9 @@ export default function AutomationDemo() {
         <div className="demo__text">
           <SectionTitle
             eyebrow="Cómo funciona"
-            title="Así trabaja una automatización de GALEON"
+            title="Así trabaja una"
+            accent="automatización de GALEON"
+            align="left"
             subtitle="Un mensaje entra por tu web, la IA lo entiende, lo registra en tu CRM y responde, en segundos y sin que nadie de tu equipo toque nada."
           />
           <Reveal className="demo__stats">

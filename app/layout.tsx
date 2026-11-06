@@ -1,12 +1,18 @@
 import type { Metadata, Viewport } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Inter, Plus_Jakarta_Sans } from 'next/font/google';
 import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import ChatWidget from '@/components/ChatWidget';
 import { site } from '@/lib/content';
 import './globals.css';
 
-const montserrat = Montserrat({ subsets: ['latin'], weight: ['400', '500', '600', '700', '800'], variable: '--font-montserrat', display: 'swap' });
+const inter = Inter({ subsets: ['latin'], variable: '--font-inter', display: 'swap' });
+const jakarta = Plus_Jakarta_Sans({
+  subsets: ['latin'],
+  weight: ['500', '600', '700', '800'],
+  variable: '--font-jakarta',
+  display: 'swap',
+});
 
 export const metadata: Metadata = {
   title: {
@@ -29,7 +35,7 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="es" className={montserrat.variable}>
+    <html lang="es" className={`${inter.variable} ${jakarta.variable}`}>
       <body>
         <a href="#main" className="skip-link">
           Saltar al contenido

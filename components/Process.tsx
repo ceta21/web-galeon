@@ -8,7 +8,8 @@ export default function Process() {
       <div className="container">
         <SectionTitle
           eyebrow="Cómo trabajamos"
-          title="De la idea al lanzamiento"
+          title="De la idea al"
+          accent="lanzamiento"
           subtitle="Un proceso claro, sin sorpresas, pensado para avanzar rápido sin perder calidad."
         />
         <ol className="timeline">

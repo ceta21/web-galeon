@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <TrustBar />
       <Services />
       <AutomationDemo />
       <About />
+      <TrustBar />
       <Process />
       <Packages />
       <Faq />
