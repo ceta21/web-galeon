@@ -2,11 +2,13 @@ import { process } from '@/lib/content';
 import SectionTitle from './SectionTitle';
 import Reveal from './Reveal';
 
+// Proceso en línea de tiempo: una línea cian que une los cuatro pasos.
 export default function Process() {
   return (
     <section className="section section--alt" id="proceso">
       <div className="container">
         <SectionTitle
+          index="04"
           eyebrow="Cómo trabajamos"
           title="De la idea al"
           accent="lanzamiento"

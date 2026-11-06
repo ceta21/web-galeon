@@ -11,7 +11,8 @@ export default function Faq() {
   return (
     <section className="section section--alt" id="faqs">
       <div className="container container--narrow">
-        <SectionTitle eyebrow="Dudas frecuentes" title="Preguntas"
+        <SectionTitle index="06"
+          eyebrow="Dudas frecuentes" title="Preguntas"
           accent="frecuentes"
         />
         <Reveal className="faq">
