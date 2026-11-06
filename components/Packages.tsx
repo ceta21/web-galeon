@@ -9,8 +9,10 @@ export default function Packages() {
     <section className="section" id="paquetes">
       <div className="container">
         <SectionTitle
+          index="05"
           eyebrow="Cómo empezar"
-          title="Elige cómo quieres empezar"
+          title="Elige cómo quieres"
+          accent="empezar"
           subtitle="Cada servicio funciona de forma independiente: no hace falta contratarlo todo junto."
         />
         <div className="packages">

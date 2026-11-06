@@ -30,13 +30,30 @@ export const hero = {
     'Detectamos dónde pierde tiempo tu empresa y lo resolvemos con automatizaciones, asistentes de IA y webs que convierten. Sin humo: soluciones que se usan desde el primer día.',
   primaryCta: { label: 'Pide tu diagnóstico gratuito', href: '/#contacto' },
   secondaryCta: { label: 'Ver servicios', href: '/#servicios' },
+  badges: ['Diagnóstico gratuito', 'Propuesta en menos de 24h', 'IA, automatización y web en un solo equipo', '100% a medida'],
 };
 
-export const trust = [
-  { value: 'IA + Web', label: 'Un solo equipo' },
-  { value: '24h', label: 'Respuesta a tu propuesta' },
-  { value: '100%', label: 'A medida' },
-  { value: 'Continuo', label: 'Soporte tras lanzar' },
+// Conversación de ejemplo con Nova en la portada, una por sector. Ilustra lo que hace una
+// automatización de GALEON: entender el mensaje, responder y dejar el trabajo hecho.
+export const novaScenarios = [
+  {
+    sector: 'Clínica',
+    user: 'Hola, ¿tenéis cita para una limpieza dental esta semana?',
+    reply: '¡Hola! Sí, tenemos hueco el jueves a las 10:30 o el viernes a las 17:00. ¿Cuál te viene mejor?',
+    actions: ['Cita propuesta', 'Paciente registrado', 'Recordatorio programado'],
+  },
+  {
+    sector: 'Inmobiliaria',
+    user: 'Busco un piso de 3 habitaciones en Sevilla por menos de 250.000 €',
+    reply: 'Tengo 4 pisos que encajan. Te envío las fichas por email y, si quieres, te agendo una visita.',
+    actions: ['Lead cualificado', 'Fichas enviadas', 'Agente avisado'],
+  },
+  {
+    sector: 'Tienda online',
+    user: '¿Dónde está mi pedido #4821? Lo hice el lunes',
+    reply: 'Tu pedido salió ayer y llega mañana antes de las 14:00. Te paso el enlace de seguimiento.',
+    actions: ['Pedido consultado', 'Seguimiento enviado', 'Ticket cerrado'],
+  },
 ];
 
 export type IconName = 'bot' | 'code' | 'plug' | 'compass' | 'chat' | 'funnel' | 'chart' | 'pen';

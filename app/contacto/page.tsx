@@ -13,7 +13,7 @@ export default function ContactPage() {
         <div className="container">
           <span className="eyebrow">Contacto</span>
           <h1>
-            Hablemos de tu <span className="accent">proyecto</span>
+            Hablemos de tu <span className="gradient-text">proyecto</span>
           </h1>
           <p>Cuéntanos qué te gustaría automatizar o qué web necesitas: te respondemos con una propuesta concreta.</p>
         </div>

@@ -9,7 +9,9 @@ export default function About() {
       <div className="container">
         <div className="about">
           <Reveal className="about__text">
-            <span className="eyebrow">Quiénes somos</span>
+            <span className="eyebrow">
+              <b>03</b>Quiénes somos
+            </span>
             <h2>{about.title}</h2>
             <p>{about.text}</p>
           </Reveal>
